@@ -298,8 +298,8 @@ public class MainActivity extends AppCompatActivity {
         int ba=(int)(bs/n);
         int aa=(int)(as/n);
         int Gray=(ra*30+ga*59+ba*11)/100;
-        double k=0.798507,b=0.53012;
-        double c=(((double)ra/(double)ga)/0.5-b)/k*50;
+        double k=0.0078,b=0.2496;
+        double c=((double)ra/(double)ga-b)/k;
         ImageView imageview = (ImageView) findViewById(R.id.imgaeview);
         imageview.setBackgroundColor(Color.argb(aa, ra, ga, ba));
         TextView textview = (TextView) findViewById(R.id.textView);
