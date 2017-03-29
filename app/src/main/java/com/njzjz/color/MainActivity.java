@@ -303,7 +303,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageview = (ImageView) findViewById(R.id.imgaeview);
         imageview.setBackgroundColor(Color.argb(aa, ra, ga, ba));
         TextView textview = (TextView) findViewById(R.id.textView);
-        textview.setText("R=" + ra + ",G=" + ga + ",B=" + ba+",Gray="+Gray+",c(DPA)="+c+"μM");
+        textview.setText("R=" + ra + ",G=" + ga + ",B=" + ba+",Gray="+Gray+",c(DPA)="+String.format("%.2f",c)+"μM");
     }
 
     public Action getIndexApiAction() {
