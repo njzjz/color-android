@@ -9,6 +9,7 @@
     android:paddingRight="0pt"
     android:paddingTop="0pt"
     android:paddingBottom="0pt"
+    android:background="@color/background"
     tools:context="com.njzjz.color.MainActivity">
 
     <SurfaceView
@@ -19,12 +20,33 @@
 
     <ImageView
         android:id="@+id/imgaeview2"
-        android:scaleType="fitXY"
+        android:scaleType="fitCenter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_special_disease_circle"
+        android:text="@string/settings"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_special_disease_circle"
+        android:text="@string/camera"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/imgaeview"
@@ -36,7 +58,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Touch to see the colour."
+        android:text="@string/touch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -49,7 +71,7 @@
         android:layout_toStartOf="@+id/button" />
 
     <Button
-        android:text="Open"
+        android:text="@string/open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_special_disease_circle"

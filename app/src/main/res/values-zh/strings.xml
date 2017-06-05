@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Color</string>
+    <string name="open">打开</string>
+    <string name="camera">相机</string>
+    <string name="touch">点击屏幕，查看颜色。</string>
+    <string name="settings">设置</string>
+    <string name="Colors">取色设置</string>
+    <string name="Size">取色半径（像素）</string>
+</resources>
