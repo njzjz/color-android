@@ -1,8 +1,8 @@
 language: android
 
- sudo: false
+sudo: false
 
- android:
+android:
   components:
   - tools
   - platform-tools
@@ -14,8 +14,11 @@ language: android
   - 'android-sdk-preview-license-.+'
   - 'android-sdk-license-.+'
   - 'google-gdk-license-.+'
+  - '.+'
 
- before_install:
+before_install:
   - chmod +x gradlew
+  - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.0"
+  - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.0"
 script:
   - ./gradlew assembleRelease
