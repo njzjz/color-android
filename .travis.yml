@@ -1,8 +1,8 @@
 language: android
 
- sudo: false
+sudo: false
 
- android:
+android:
   components:
   - tools
   - platform-tools
@@ -15,7 +15,7 @@ language: android
   - 'android-sdk-license-.+'
   - 'google-gdk-license-.+'
 
- before_install:
+before_install:
   - chmod +x gradlew
 script:
   - ./gradlew assembleRelease
